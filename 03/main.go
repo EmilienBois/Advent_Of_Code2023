@@ -9,6 +9,98 @@ import (
 func main() {
 	//We read the file line by line
 	test, size := read_file("input.txt")
+	compteur_global := 0
+	//For every line we're gonna get the index of every symbols
+	var tab_index [141][]int
+	var tab_index_stars [141][]int
+
+	for i := 0; i < size; i++ { // Here we initialise the tab index containing the number
+		s := test[i]
+		for j := 0; j < len(s); j++ {
+			number := 0
+
+			new_j := j
+			notend := is_number(s[new_j])
+			if notend {
+				for notend { // on récupère la taille d'un nombre
+					number += 1
+					new_j += 1
+					if new_j == 140 {
+						notend = false
+					} else {
+						notend = is_number(s[new_j])
+					}
+				}
+				tab_index[i] = append(tab_index[i], j)      //We have the index of the number
+				tab_index[i] = append(tab_index[i], number) //We have the size of the number
+				num_number, err := strconv.Atoi(s[j : j+number])
+				if err != nil {
+					// ... handle error
+					panic(err)
+				}
+				tab_index[i] = append(tab_index[i], num_number)
+				j = new_j
+			}
+		}
+
+	}
+	for i := 0; i < size; i++ {
+		tab_index_stars[i] = get_index_stars(test[i])
+	}
+	for i := 0; i < size; i++ {
+		for _, elt := range tab_index_stars[i] {
+			t_number, number := touched_number(i, elt, tab_index)
+			if t_number == 2 {
+				compteur_global += number[0] * number[1]
+			}
+		}
+	}
+	println(compteur_global)
+}
+
+func touched_number(i int, elt int, tab_index [141][]int) (int, []int) {
+	max := 1
+	min := -1
+	if i == 0 {
+		min = 0
+	}
+	if i == 140 {
+		max = 0
+	}
+	var number_touched []int
+	number_stars := 0
+	for l := min; l < max+1; l++ {
+		this := tab_index[l+i]
+		for c := 0; c < len(this); c += 3 {
+			index := this[c]
+			size := this[c+1]
+			number := this[c+2]
+			for j := 0; j < size; j++ {
+				real_index := j + index
+				if real_index == elt-1 || real_index == elt || real_index == elt+1 {
+					number_stars += 1
+					number_touched = append(number_touched, number)
+					j = size
+				}
+			}
+		}
+	}
+	return number_stars, number_touched
+}
+
+func get_index_stars(s string) []int {
+	var new_str []int
+	for i, elt := range s {
+		if elt == '*' {
+			new_str = append(new_str, i)
+		}
+	}
+	return new_str
+}
+
+func main2() {
+	//We read the file line by line
+	test, size := read_file("input.txt")
 	compteur := 0
 	//For every line we're gonna get the index of every symbols
 	var tab_index [141][]int
