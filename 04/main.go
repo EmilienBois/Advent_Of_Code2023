@@ -1,7 +1,6 @@
 package main
 
 import (
-	"strconv"
 	"strings"
 
 	"github.com/EmilienBois/Advent_Of_Code2023/utils"
@@ -79,12 +78,8 @@ func Get_numbers(s string) []int {
 			if i+1 < len(s) && utils.Is_number(s[i+1]) {
 				end = 2
 			}
+			number := utils.Byte_to_Int(s[i : i+end])
 
-			number, err := strconv.Atoi(s[i : i+end])
-			if err != nil {
-				// ... handle error
-				panic(err)
-			}
 			liste = append(liste, number)
 		}
 		i = i + end

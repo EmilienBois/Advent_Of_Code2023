@@ -93,7 +93,7 @@ func get_first(s string) int {
 }
 
 func get_last(s string) int {
-	for i, _ := range s {
+	for i := range s {
 		if s[len(s)-i-1] == '0' {
 			return 0
 		}

@@ -3,6 +3,7 @@ package utils
 import (
 	"bufio"
 	"os"
+	"strconv"
 )
 
 // Lecture de fichier
@@ -29,6 +30,15 @@ func Is_number(elt byte) bool {
 		return true
 	}
 	return false
+}
+
+func Byte_to_Int(elt string) int {
+	number, err := strconv.Atoi(elt)
+	if err != nil {
+		// ... handle error
+		panic(err)
+	}
+	return number
 }
 
 func Somme(liste []int) int {
