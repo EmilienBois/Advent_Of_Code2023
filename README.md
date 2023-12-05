@@ -27,4 +27,5 @@ Language used : GO
 Quite easy day, it's a relief !
 
 DAY 5 : 
-I've had a really hard time here. Been awoken seen 6:45 am trying to resolve it. However, it is also the first time I've been confronted to the size problem. My first program worked only for part 1 and input test. My second was fast enough for the whole input and test for part 2. I've spent more than 20 min to get the answer for the second part for the whole input.
+I've had a really hard time here. Been awoken seen 6:45 am trying to resolve it. However, it is also the first time I've been confronted to the size problem. My first program worked only for part 1 and input test. My second was fast enough for the whole input and test for part 2. I've spent more than 20 min to get the answer for the second part for the whole input. 
+Result : 27992443

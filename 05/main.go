@@ -34,7 +34,6 @@ func Part2(s string) int {
 	//So now we have the entire linking
 	min := Get_location(links, init_seeds[0])
 	for i := 0; i < len(init_seeds); i = i + 2 {
-		print("Done")
 		for j := 0; j < init_seeds[i+1]; j++ {
 			location := Get_location(links, init_seeds[i]+j)
 
@@ -76,7 +75,6 @@ func Part1(s string) int {
 	min := Get_location(links, init_seeds[0])
 	for _, elt := range init_seeds {
 		location := Get_location(links, elt)
-		print(location)
 		if location < min {
 			min = location
 		}
