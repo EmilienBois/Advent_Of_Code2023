@@ -45,7 +45,61 @@ func Part2(s string) int {
 	}
 	return min
 }
+func Part2_reverse(s string) int {
+	test, size := utils.Read_file(s)
+	//Retrieving initial seeds
+	init_seeds := Get_numbers(strings.Split(test[0], ": ")[1])
+	//retrieving links
 
+	links := make(map[string][]int)
+
+	actual_str := ""
+	var values []int
+	for i := 2; i < size; i++ {
+		this := test[i]
+		if len(this) == 0 {
+			links[actual_str] = values
+			values = []int{}
+		} else if !utils.Is_number(this[0]) {
+			actual_str = strings.Split(this, " ")[0]
+		} else {
+			numbers := Get_numbers(this)
+			values = append(values, numbers...)
+			if i == size-1 {
+				links[actual_str] = values
+			}
+		}
+	}
+	//So now we have the entire linking
+	found := false
+	for !found {
+
+	}
+	return min
+}
+
+func Get_seed(links map[string][]int, location int) int {
+	liste_steps := [7]string{"seed-to-soil", "soil-to-fertilizer", "fertilizer-to-water", "water-to-light", "light-to-temperature", "temperature-to-humidity", "humidity-to-location"}
+	actual := init
+	previous := init
+	for i:=len(liste_steps)-1 ; i >-1 ; i-- {
+		this := links[liste_steps[i]]
+		for i := 0; i < len(this); i = i + 3 {
+			min := this[1+i]
+			max := this[2+i] + this[1+i]
+			if min <= actual && actual <= max {
+				previous = this[0+i] + actual - this[1+i]
+				i = len(this)
+			}
+		}
+		actual = next
+
+	}
+		this := links[e]
+		
+	}
+	return next
+}
 func Part1(s string) int {
 
 	test, size := utils.Read_file(s)
