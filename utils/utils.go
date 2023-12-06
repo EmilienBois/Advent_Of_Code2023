@@ -48,3 +48,27 @@ func Somme(liste []int) int {
 	}
 	return somme
 }
+
+func Get_liste_numbers(s string) []int {
+	var numbers []int
+	for j := 0; j < len(s); j++ {
+		new_j := j
+		notend := Is_number(s[new_j])
+		for notend { // on récupère la taille d'un nombre
+			new_j += 1
+			if new_j == len(s) {
+				notend = false
+			} else {
+				notend = Is_number(s[new_j])
+			}
+		}
+		if new_j == j {
+
+		} else {
+			number := Byte_to_Int(s[j:new_j])
+			numbers = append(numbers, number)
+			j = new_j
+		}
+	}
+	return numbers
+}
