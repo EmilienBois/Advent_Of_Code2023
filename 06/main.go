@@ -1,9 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/EmilienBois/Advent_Of_Code2023/utils"
 )
@@ -87,12 +89,21 @@ func Get_the_number(s string) int {
 
 }
 func main() {
+	println("--2023 day 06 solution--")
+	start := time.Now()
 	result_one_test := Part1("inputtest.txt")
 	println("The result of the input test for the part 1 is : ", result_one_test)
+
+	println(time.Since(start))
 	result_one := Part1("input.txt")
 	println("The result of the input for the part 1 is : ", result_one)
+	println(time.Since(start))
 	result_two_test := Part2("inputtest.txt")
 	println("The result of the input test for the part 2 is : ", result_two_test)
+	println(time.Since(start))
 	result_two := Part2("input.txt")
 	println("The result of the input for the part 2 is : ", result_two)
+	println(time.Since(start))
+	end := time.Now()
+	fmt.Printf("%s", end.Sub(start))
 }
