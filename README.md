@@ -39,7 +39,7 @@ Go Language
 At first, I thought today would be easy. However, even if it worked on the inputtest, I don't know why It doesn't work on my input. I abandon for now, but I will come back later.
 
 DAY 8 :
-Not tried
+Done after day 9, during day 9. First part was quite easy, but doesn't work on part 2, because it is to slow
 
 DAY 9 :
-I'm very proud of today. I've done it in half an hour, bu using a very powerful iterative function. So my program stands in less than 100 lines. It feels really good to finally succeed a day.
+I'm very proud of today. I've done it in half an hour, bu using a very powerful recursive function. So my program stands in less than 100 lines. It feels really good to finally succeed a day.
