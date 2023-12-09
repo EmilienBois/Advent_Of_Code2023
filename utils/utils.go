@@ -53,6 +53,11 @@ func Get_liste_numbers(s string) []int {
 	var numbers []int
 	for j := 0; j < len(s); j++ {
 		new_j := j
+		negative := false
+		if s[j] == '-' {
+			new_j += 1
+			negative = true
+		}
 		notend := Is_number(s[new_j])
 		for notend { // on récupère la taille d'un nombre
 			new_j += 1
@@ -65,9 +70,15 @@ func Get_liste_numbers(s string) []int {
 		if new_j == j {
 
 		} else {
-			number := Byte_to_Int(s[j:new_j])
-			numbers = append(numbers, number)
-			j = new_j
+			if !negative {
+				number := Byte_to_Int(s[j:new_j])
+				numbers = append(numbers, number)
+				j = new_j
+			} else {
+				number := Byte_to_Int(s[j+1 : new_j])
+				numbers = append(numbers, -number)
+				j = new_j
+			}
 		}
 	}
 	return numbers

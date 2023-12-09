@@ -33,3 +33,13 @@ Result : 27992443
 DAY 6 :
 Still on GO language.
 I found today's enigma very easy. Though, I tried directly to optimize it by resolving every time the second degree equation, and not iterate at all on the file. It made me loose a lot of time. Although, I'm still trying to understand how to test better.
+
+DAY 7 :
+Go Language
+At first, I thought today would be easy. However, even if it worked on the inputtest, I don't know why It doesn't work on my input. I abandon for now, but I will come back later.
+
+DAY 8 :
+Not tried
+
+DAY 9 :
+I'm very proud of today. I've done it in half an hour, bu using a very powerful iterative function. So my program stands in less than 100 lines. It feels really good to finally succeed a day.
