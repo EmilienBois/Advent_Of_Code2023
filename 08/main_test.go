@@ -15,8 +15,8 @@ func TestPart1(t *testing.T) {
 	}
 }
 func TestPart2(t *testing.T) {
-	result := Part2("inputtest.txt")
-	expected := 2
+	result := Part2fast("inputtestpart2.txt")
+	expected := 6
 	if result != expected {
 		t.Errorf("Result is incorrect, got: %d, want: %d.", result, expected)
 	}

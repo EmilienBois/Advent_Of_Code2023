@@ -83,3 +83,22 @@ func Get_liste_numbers(s string) []int {
 	}
 	return numbers
 }
+
+func Min_tab(tab []int) int {
+	min := tab[0]
+	for i := 1; i < len(tab); i++ {
+		if tab[i] < min {
+			min = tab[i]
+		}
+	}
+	return min
+}
+func Max_tab(tab []int) int {
+	max := tab[0]
+	for i := 1; i < len(tab); i++ {
+		if tab[i] > max {
+			max = tab[i]
+		}
+	}
+	return max
+}

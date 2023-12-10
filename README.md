@@ -39,7 +39,8 @@ Go Language
 At first, I thought today would be easy. However, even if it worked on the inputtest, I don't know why It doesn't work on my input. I abandon for now, but I will come back later.
 
 DAY 8 :
-Done after day 9, during day 9. First part was quite easy, but doesn't work on part 2, because it is to slow
+Done after day 9, during day 9. First part was quite easy, and I needed more time to do the second part, where I needed to think about getting the smallest path for each begin (each element that ends with). I called all these path steps and put them in the variable liste_steps. I then have found the Smallest common multiple of these steps. FOr this, I first tried to find it starting from 0 up to the wanted number. However, it was still to slow, and I finally decided to use recursive functions : PPCM and PCDG, using mathematical formulas to calculate it fast.
+Interesting challenge.
 
 DAY 9 :
 I'm very proud of today. I've done it in half an hour, bu using a very powerful recursive function. So my program stands in less than 100 lines. It feels really good to finally succeed a day.
