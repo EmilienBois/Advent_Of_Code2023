@@ -44,3 +44,7 @@ Interesting challenge.
 
 DAY 9 :
 I'm very proud of today. I've done it in half an hour, bu using a very powerful recursive function. So my program stands in less than 100 lines. It feels really good to finally succeed a day.
+
+DAY 11 :
+Language go
+Interesting day, I have used a lot of functions, and it really helped me going faster. In the end, I realized I could delete one function to optimize my program and make the part 2 doable in less than 7ms.

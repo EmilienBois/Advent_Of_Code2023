@@ -102,3 +102,11 @@ func Max_tab(tab []int) int {
 	}
 	return max
 }
+
+func Abs(entier int) int {
+	if entier < 0 {
+		return -entier
+	} else {
+		return entier
+	}
+}
