@@ -112,17 +112,39 @@ func PGCD(a, b int) int {
 	}
 }
 func main() {
+	begin := time.Now()
 	start := time.Now()
 	result_one_test1 := Part1("inputtest1.txt")
 	println("The result of the input test for the part 1 is : ", result_one_test1)
+
+	end := time.Now()
+	fmt.Printf("%s \n", end.Sub(start))
+	start = time.Now()
+
 	result_one_test2 := Part1("inputtest2.txt")
 	println("The result of the input test for the part 1 is : ", result_one_test2)
+
+	end = time.Now()
+	fmt.Printf("%s \n", end.Sub(start))
+	start = time.Now()
+
 	result_one := Part1("input.txt")
 	println("The result of the input for the part 1 is : ", result_one)
+
+	end = time.Now()
+	fmt.Printf("%s \n", end.Sub(start))
+	start = time.Now()
+
 	result_two_test := Part2fast("inputtestpart2.txt")
 	println("The result of the input test for the part 2 is : ", result_two_test)
+
+	end = time.Now()
+	fmt.Printf("%s \n", end.Sub(start))
+	start = time.Now()
+
 	result_two := Part2fast("input.txt")
 	println("The result of the input for the part 2 is : ", result_two)
-	end := time.Now()
-	fmt.Printf("%s", end.Sub(start))
+	end = time.Now()
+	fmt.Printf("%s \n", end.Sub(start))
+	fmt.Printf("whole program time : ", end.Sub(begin))
 }

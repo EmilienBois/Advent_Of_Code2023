@@ -37,6 +37,7 @@ I found today's enigma very easy. Though, I tried directly to optimize it by res
 DAY 7 :
 Go Language
 At first, I thought today would be easy. However, even if it worked on the inputtest, I don't know why It doesn't work on my input. I abandon for now, but I will come back later.
+I finally finished this day on day 12. After all my getpower function were a problem, I didn't take every possibility into account. This was showed to me evenmore on the second part.
 
 DAY 8 :
 Done after day 9, during day 9. First part was quite easy, and I needed more time to do the second part, where I needed to think about getting the smallest path for each begin (each element that ends with). I called all these path steps and put them in the variable liste_steps. I then have found the Smallest common multiple of these steps. FOr this, I first tried to find it starting from 0 up to the wanted number. However, it was still to slow, and I finally decided to use recursive functions : PPCM and PCDG, using mathematical formulas to calculate it fast.
