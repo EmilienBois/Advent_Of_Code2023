@@ -49,3 +49,7 @@ I'm very proud of today. I've done it in half an hour, bu using a very powerful 
 DAY 11 :
 Language go
 Interesting day, I have used a lot of functions, and it really helped me going faster. In the end, I realized I could delete one function to optimize my program and make the part 2 doable in less than 7ms.
+
+DAY 13 :
+Language Go
+No big deal for today, I went quite straightforward in the probleme, checking the valid mirror, first vertical, memorizing the pattern that are doone (the mirror has already been found), and next the horizontal mirror. There are a lot of "for" boucle, but breaks and memorizing helped optimize this program. Doing it in 6.856 ms

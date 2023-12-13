@@ -215,7 +215,7 @@ func Part2(s string) int {
 }
 func check_horizontal2(p Pattern, mirror int) bool {
 	nb_errors := 0
-	for col := 1; col <= p.nb_line; col++ {
+	for col := 1; col <= p.nb_col; col++ {
 		for dist := 0; dist <= mirror; dist++ {
 			if (mirror-dist) >= 1 && mirror+dist+1 <= p.nb_line {
 				pos1 := Pos{col, mirror - dist}
