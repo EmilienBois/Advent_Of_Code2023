@@ -183,7 +183,6 @@ func Part2(s string) int {
 			found = true
 		}
 	}
-	println("liste verticale reached")
 	var list_horizontal []int
 	for i, p := range liste_pattern {
 		found := false
@@ -205,12 +204,7 @@ func Part2(s string) int {
 				}
 			}
 		}
-		if i == 48 {
-			println("pattern ", i, " is done ")
-		}
-
 	}
-	println("liste horizontale reached")
 	return total
 }
 func check_horizontal2(p Pattern, mirror int) bool {
