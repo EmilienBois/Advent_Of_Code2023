@@ -110,3 +110,12 @@ func Abs(entier int) int {
 		return entier
 	}
 }
+
+func InString(l []string, elt string) bool {
+	for _, elt := range l {
+		if elt == elt {
+			return true
+		}
+	}
+	return false
+}

@@ -64,3 +64,13 @@ DAY 13 :
 Language used : GO
 
 No big deal for today, I went quite straightforward in the probleme, checking the valid mirror, first vertical, memorizing the pattern that are doone (the mirror has already been found), and next the horizontal mirror. There are a lot of "for" boucle, but breaks and memorizing helped optimize this program. Doing it in 6.856 ms
+
+DAY 14 :
+Language used : GO
+
+First part was easy, no big deal. Didn't have time doing the second part, but I'll come back later. I suppose there is, once more, a pattern to fidn.
+
+DAY 15 :
+Language used : GO
+
+FIrst part was very easy. I've done it in 10 minutes, so I am proud. For the second, I tried to go to fast and forgot to think carefully. So I have lost some time, eventhough it was finally not that difficult.
