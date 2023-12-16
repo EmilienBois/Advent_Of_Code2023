@@ -74,3 +74,7 @@ DAY 15 :
 Language used : GO
 
 FIrst part was very easy. I've done it in 10 minutes, so I am proud. For the second, I tried to go to fast and forgot to think carefully. So I have lost some time, eventhough it was finally not that difficult.
+
+DAY 16 :
+Language used : GO
+Today i wasn't very motivated by the problem. However, it took me about 2 hours to resolve the first part. It was a bit annoying because it was mostly about switch and case. BUT, i thought it was very interesting because it was an infinte boucle, so I needed to implement the number of times my grid hadn't changed, in order to stop the boucle when needed. I don't know if it is the optimize way but it was an interesting approach. For the second part, I am too tired to think about it much more, but I don't see other optimization, so I'm trying to do the same program 400 times. It took me 6min30, but I didn't get the good answer(7952). i'll be coming back later.
