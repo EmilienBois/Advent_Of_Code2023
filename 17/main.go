@@ -89,7 +89,7 @@ func Part1(s string) int {
 		this := file[i]
 		for j := 0; j < len(this); j++ {
 			pos := Pos{i, j}
-			cost[pos] = utils.Byte_to_Int(string(this[j]))
+			cost[pos] = utils.String_to_Int(string(this[j]))
 		}
 	}
 
@@ -135,7 +135,7 @@ func Part2(s string) int {
 		this := file[i]
 		for j := 0; j < len(this); j++ {
 			pos := Pos{i, j}
-			cost[pos] = utils.Byte_to_Int(string(this[j]))
+			cost[pos] = utils.String_to_Int(string(this[j]))
 		}
 	}
 

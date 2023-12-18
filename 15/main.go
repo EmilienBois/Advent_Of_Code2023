@@ -60,7 +60,7 @@ func Part2(s string) int {
 			}
 		} else {
 			label := elt[:len(elt)-2]
-			focal := utils.Byte_to_Int(string(elt[len(elt)-1]))
+			focal := utils.String_to_Int(string(elt[len(elt)-1]))
 			box := Get_HASH(label)
 			exist := false
 			for i, _ := range liste_box[box] {

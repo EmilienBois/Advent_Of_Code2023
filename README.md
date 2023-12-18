@@ -83,3 +83,6 @@ DAY 17 :
 Language used : GO
 I've been helped a lot by the class we had. Using Djikstra, the problem really is easier. I used an already made program for the priority queue, which helped me but also troubled me because I needed to rewrite some things.
 
+DAY 18 :
+Language used : GO
+Tried without success today's challenge. I tried to do it withou the formulas on internet, and it just didn't give me a correct result, however it worked well on the inputtest. I tried to first calculate the perimeter : easy ; then calculate the surface, taking line by line. For each line, I used a In boolean countaining the information of whether the actual location was supposed to be in the surface or outside. Then I had a lot of difficulties with the sommet. 

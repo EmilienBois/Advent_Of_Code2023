@@ -32,7 +32,7 @@ func Is_number(elt byte) bool {
 	return false
 }
 
-func Byte_to_Int(elt string) int {
+func String_to_Int(elt string) int {
 	number, err := strconv.Atoi(elt)
 	if err != nil {
 		// ... handle error
@@ -71,11 +71,11 @@ func Get_liste_numbers(s string) []int {
 
 		} else {
 			if !negative {
-				number := Byte_to_Int(s[j:new_j])
+				number := String_to_Int(s[j:new_j])
 				numbers = append(numbers, number)
 				j = new_j
 			} else {
-				number := Byte_to_Int(s[j+1 : new_j])
+				number := String_to_Int(s[j+1 : new_j])
 				numbers = append(numbers, -number)
 				j = new_j
 			}
