@@ -78,3 +78,8 @@ FIrst part was very easy. I've done it in 10 minutes, so I am proud. For the sec
 DAY 16 :
 Language used : GO
 Today i wasn't very motivated by the problem. However, it took me about 2 hours to resolve the first part. It was a bit annoying because it was mostly about switch and case. BUT, i thought it was very interesting because it was an infinte boucle, so I needed to implement the number of times my grid hadn't changed, in order to stop the boucle when needed. I don't know if it is the optimize way but it was an interesting approach. For the second part, I am too tired to think about it much more, but I don't see other optimization, so I'm trying to do the same program 400 times. It took me 6min30, but I didn't get the good answer(7952). i'll be coming back later.
+
+DAY 17 : 
+Language used : GO
+I've been helped a lot by the class we had. Using Djikstra, the problem really is easier. I used an already made program for the priority queue, which helped me but also troubled me because I needed to rewrite some things.
+

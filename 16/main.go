@@ -159,7 +159,7 @@ func Nb_energized(s string, first Point) int {
 		} else {
 			times_no_change = 0
 		}
-		if times_no_change >= 3 {
+		if times_no_change >= 2 {
 			notend = false
 		}
 	}
