@@ -78,7 +78,7 @@ func Get_numbers(s string) []int {
 			if i+1 < len(s) && utils.Is_number(s[i+1]) {
 				end = 2
 			}
-			number := utils.Byte_to_Int(s[i : i+end])
+			number := utils.String_to_Int(s[i : i+end])
 
 			liste = append(liste, number)
 		}

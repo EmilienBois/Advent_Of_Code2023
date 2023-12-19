@@ -119,7 +119,7 @@ func Get_numbers(s string) []int {
 		if new_j == j {
 
 		} else {
-			number := utils.Byte_to_Int(s[j:new_j])
+			number := utils.String_to_Int(s[j:new_j])
 			numbers = append(numbers, number)
 			j = new_j
 		}

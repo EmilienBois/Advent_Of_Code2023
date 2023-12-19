@@ -85,7 +85,7 @@ func Get_the_number(s string) int {
 	}
 	str := strings.Join(time_int, "")
 
-	return utils.Byte_to_Int(str)
+	return utils.String_to_Int(str)
 
 }
 func main() {

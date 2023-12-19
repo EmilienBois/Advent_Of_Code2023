@@ -77,12 +77,21 @@ FIrst part was very easy. I've done it in 10 minutes, so I am proud. For the sec
 
 DAY 16 :
 Language used : GO
+
 Today i wasn't very motivated by the problem. However, it took me about 2 hours to resolve the first part. It was a bit annoying because it was mostly about switch and case. BUT, i thought it was very interesting because it was an infinte boucle, so I needed to implement the number of times my grid hadn't changed, in order to stop the boucle when needed. I don't know if it is the optimize way but it was an interesting approach. For the second part, I am too tired to think about it much more, but I don't see other optimization, so I'm trying to do the same program 400 times. It took me 6min30, but I didn't get the good answer(7952). i'll be coming back later.
 
 DAY 17 : 
 Language used : GO
+
 I've been helped a lot by the class we had. Using Djikstra, the problem really is easier. I used an already made program for the priority queue, which helped me but also troubled me because I needed to rewrite some things.
 
 DAY 18 :
 Language used : GO
+
 Tried without success today's challenge. I tried to do it withou the formulas on internet, and it just didn't give me a correct result, however it worked well on the inputtest. I tried to first calculate the perimeter : easy ; then calculate the surface, taking line by line. For each line, I used a In boolean countaining the information of whether the actual location was supposed to be in the surface or outside. Then I had a lot of difficulties with the sommet. 
+
+DAY 19 :
+Language used : GO
+
+I did first part withouth much difficulty, and I haven't had time to try part 2, though it seems to be interesting and I'll come back later. For the first part, much of my time was occupied by examining the file and making both the rating and workflow map. I think I did well also because I first tried to think about my coding : what maps and slices I would need. 
+I first used a map linking a string (the step) to a list of Rules, these being a struct having 4 attributes : sign, category, value and destination. For a default rules I decided that only the attribute destination would be not null. Then I used a list of Rating, rating being a map linking a string to an int (the category to its value)
