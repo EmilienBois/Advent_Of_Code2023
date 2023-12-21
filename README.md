@@ -95,3 +95,7 @@ Language used : GO
 
 I did first part withouth much difficulty, and I haven't had time to try part 2, though it seems to be interesting and I'll come back later. For the first part, much of my time was occupied by examining the file and making both the rating and workflow map. I think I did well also because I first tried to think about my coding : what maps and slices I would need. 
 I first used a map linking a string (the step) to a list of Rules, these being a struct having 4 attributes : sign, category, value and destination. For a default rules I decided that only the attribute destination would be not null. Then I used a list of Rating, rating being a map linking a string to an int (the category to its value)
+
+DAY 20 :
+Language used : GO
+
