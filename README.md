@@ -99,3 +99,19 @@ I first used a map linking a string (the step) to a list of Rules, these being a
 DAY 20 :
 Language used : GO
 
+Have not tried yet
+
+DAY 21 :
+Language used : GO
+
+Succeeded part 1. I used the parity of the number of steps to do. 
+
+DAY 22 :
+Language used : GO
+
+Did not succeed for part 1, there is a problem of optimization.
+
+DAY 23 :
+Language used : GO
+
+Tried to do it with Dijkstra algorithm, but without success. I do not know how to implement the fact that THIS path has already passed this position.
