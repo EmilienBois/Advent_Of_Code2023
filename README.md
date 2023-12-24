@@ -55,6 +55,11 @@ Language used : GO
 
 I'm very proud of today. I've done it in half an hour, bu using a very powerful recursive function. So my program stands in less than 100 lines. It feels really good to finally succeed a day.
 
+DAY 10 :
+Language used : GO
+
+I did this on day 24. First part was very easy, And i didn't have to debug it at all. For the second part, I used Both pick's theorem and Shoelace's formula. These are very interesting formulas. I will use them for day 18. 
+
 DAY 11 :
 Language used : GO
 
